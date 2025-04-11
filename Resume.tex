@@ -1,0 +1,333 @@
+%-------------------------
+% Resume in Latex
+% Author : Adrian Tull
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+
+%---------------
+%%%% FONTS %%%%%
+%---------------
+
+%----------------------------------------------------------------
+% SERIF FONTS
+%----------------------------------------------------------------
+% Computer Modern (default)
+% \renewcommand{\rmdefault}{cmr}
+
+% Latin Modern
+% \usepackage{lmodern}
+% \renewcommand{\rmdefault}{lmr}
+
+% Times
+% \renewcommand{\rmdefault}{ptm}
+
+% Palatino
+% \renewcommand{\rmdefault}{ppl}
+
+% Bookman
+% \renewcommand{\rmdefault}{pbk}
+
+% New Century Schoolbook
+% \renewcommand{\rmdefault}{pnc}
+
+% Charter
+% \renewcommand{\rmdefault}{bch}
+
+% Utopia
+% \renewcommand{\rmdefault}{put}
+
+% TeX Gyre Schola
+% \renewcommand{\rmdefault}{qpl}
+
+% TeX Gyre Termes
+% \renewcommand{\rmdefault}{qtm}
+%----------------------------------------------------------------
+
+
+%----------------------------------------------------------------
+% SANS SERIF FONTS
+%----------------------------------------------------------------
+% Computer Modern Sans
+% \renewcommand{\sfdefault}{cmss}
+
+% Latin Modern Sans
+% \usepackage{lmodern}
+% \renewcommand{\sfdefault}{lmss}
+
+% Helvetica
+% \renewcommand{\sfdefault}{phv}
+
+% Avant Garde
+% \renewcommand{\sfdefault}{pag}
+
+% TeX Gyre Heros
+% \renewcommand{\sfdefault}{qhv}
+
+% TeX Gyre Adventor
+% \renewcommand{\sfdefault}{qiv}
+
+% Nimbus Sans L
+% \renewcommand{\sfdefault}{nvs}
+
+% Computer Modern Sans (duplicate for consistency)
+% \renewcommand{\sfdefault}{cmss}
+
+% Helvetica (duplicate for consistency)
+% \renewcommand{\sfdefault}{phv}
+
+% Avant Garde (duplicate for consistency)
+% \renewcommand{\sfdefault}{pag}
+%----------------------------------------------------------------
+
+
+%----------------------------------------------------------------
+% MONOSPACE FONTS
+%----------------------------------------------------------------
+% Computer Modern Typewriter (default)
+% \renewcommand{\ttdefault}{cmtt}
+
+% Latin Modern Mono
+% \usepackage{lmodern}
+% \renewcommand{\ttdefault}{lmtt}
+
+% Courier
+% \renewcommand{\ttdefault}{pcr}
+
+% Inconsolata
+% \renewcommand{\ttdefault}{zi4}
+
+% Nimbus Mono L
+% \renewcommand{\ttdefault}{nmm}
+
+% Anonymous Pro
+% \renewcommand{\ttdefault}{anpro}
+
+% Luxi Mono
+% \renewcommand{\ttdefault}{luximono}
+
+% Input Mono
+% \renewcommand{\ttdefault}{inm}
+
+% Fira Mono
+% \renewcommand{\ttdefault}{fira}
+
+% DejaVu Sans Mono
+% \renewcommand{\ttdefault}{dejavu}
+%----------------------------------------------------------------
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Adrian Tull} \\ \vspace{2pt}
+    Los Angeles Metropolitan Area \\[2pt]
+    \href{mailto:adrian.m.tull@gmail.com}{adrian.m.tull@gmail.com}
+\end{center}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+\begin{left}
+\begin{tabular}{p{3cm} p{10cm}}
+\textbf{ISTQB}      & Certified Tester Foundation Level (CTFL) \\
+\textbf{CompTIA}    & A+ - Core 1                              \\
+\textbf{Confluence} & Fundamentals Certification               \\
+\textbf{Jira}       & Fundamentals Certification               \\
+\end{tabular}
+\end{center}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Southern New Hampshire University}{May 2023 -- Present}
+      {Bachelors in Computer Science}{Remote}
+    \resumeItemListStart
+        \resumeItem{GPA: 3.92}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Technology Partners}{Aug 2023 -- Present}
+      {Junior Software Engineer (Full Stack \& QA)}{Remote}
+      \resumeItemListStart
+          \resumeItem{Contributed to the full software development lifecycle from data acquisition to deployment in a fast-paced startup environment.}
+          \resumeItem{Developed and maintained robust web scraping solutions using Playwright and Stagehand with rigorous data validation and cleaning procedures.}
+          \resumeItem{Designed, implemented, and maintained relational databases using PostgreSQL and Supabase, optimizing schema design and query performance.}
+          \resumeItem{Built and maintained internal web applications using Next.js and TypeScript with user authentication and responsive design.}
+          \resumeItem{Developed a RESTful API for internal and vendor use.}
+          \resumeItem{Oversaw company-wide IT security and managed SaaS subscriptions, aligning technology solutions with business goals.}
+          \resumeItem{Acted as the primary liaison with external engineers and QA vendors.}
+          \resumeItem{Developed test strategies and cases for mobile and desktop applications; participated in building a user data database and created API documentation.}
+          \resumeItem{Conducted unit, integration, and system tests as well as user need verifications for potential app features.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Customer Service}{Mar 2020 -- Present}
+      {Target, GameStop, Stud Muffin Bakery, Five Daughters Bakery, Uconnect Esports}{}
+      \resumeItemListStart
+          \resumeItem{Resolved customer technology issues through detailed troubleshooting.}
+          \resumeItem{Managed inventory, revenue, expenses, and scheduling, overseeing \$250k in monthly revenue.}
+          \resumeItem{Trained and led teams to enhance performance and streamline onboarding processes.}
+          \resumeItem{Founded and managed a bakery, demonstrating strong entrepreneurial skills.}
+          \resumeItem{Produced and edited content for Uconnect Esports to engage gaming communities via Twitter and Discord.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dronifi}{June 2017 -- Mar 2020}
+      {Customer Sales and Service}{Westlake, CA}
+      \resumeItemListStart
+          \resumeItem{Troubleshot a range of customer issues from sales pitches to technical challenges.}
+          \resumeItem{Conducted sales calls by assessing customer needs and addressing objections.}
+          \resumeItem{Led an email marketing campaign on ZoHo and Mailchimp, increasing click-through rates from 2\% to 60\%.}
+          \resumeItem{Developed bespoke customer solutions based on in-depth product knowledge.}
+          \resumeItem{Created custom marketing materials using Photoshop and Illustrator; produced marketing videos with Premiere Pro.}
+          \resumeItem{Represented the company at Interdrone (Las Vegas 2018) to present solutions.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP / EXTRACURRICULAR-----------
+\section{Leadership / Extracurricular}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Pepperdine Gaming Club}{June 2019 -- May 2020}
+      {Founding President}{Malibu, CA}
+    \resumeSubheading
+      {IVC Video Game Development Club}{May 2023 -- Present}
+      {President}{Irvine, CA}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Data Structures and Algorithms Library} $|$ \emph{C++}}{}
+      \resumeItemListStart
+          \resumeItem{Developed a personal library of data structures and algorithms using C++, emphasizing performance optimization, memory management, and object-oriented design.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{TFT Data Crawler} $|$ \emph{Python}}{}
+      \resumeItemListStart
+          \resumeItem{Implemented a breadth-first search algorithm to call the Riot API, gathering JSON data on the top 2\% of players.}
+          \resumeItem{Analyzed data to identify popular strategies and investigate tactical gameplay decisions.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+    \resumeItem{ \textbf{Languages:} C++, Python, JavaScript, TypeScript, SQL }
+    \resumeItem{ \textbf{Tools:} Next.js, Playwright, Stagehand, PostgreSQL, Supabase, Jira, Confluence }
+\resumeSubHeadingListEnd
+
+\end{document}
