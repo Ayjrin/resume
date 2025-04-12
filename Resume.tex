@@ -1,7 +1,6 @@
 %-------------------------
 % Resume in Latex
 % Author : Adrian Tull
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -162,7 +161,7 @@
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generated pdf is machine readable/ATS parsable
+% Keep this line so that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -220,21 +219,19 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Adrian Tull} \\ \vspace{2pt}
-    Los Angeles Metropolitan Area \\[2pt]
     \href{mailto:adrian.m.tull@gmail.com}{adrian.m.tull@gmail.com}
 \end{center}
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
 \resumeSubHeadingListStart
-\begin{left}
-\begin{tabular}{p{3cm} p{10cm}}
-\textbf{ISTQB}      & Certified Tester Foundation Level (CTFL) \\
-\textbf{CompTIA}    & A+ - Core 1                              \\
-\textbf{Confluence} & Fundamentals Certification               \\
-\textbf{Jira}       & Fundamentals Certification               \\
-\end{tabular}
-\end{center}
+    \item
+    \begin{tabular}{p{3cm} p{10cm}}
+    \textbf{ISTQB}      & Certified Tester Foundation Level (CTFL) \\
+    \textbf{CompTIA}    & A+ Core 1                              \\
+    \textbf{Confluence} & Fundamentals Certification               \\
+    \textbf{Jira}       & Fundamentals Certification               \\
+    \end{tabular}
 \resumeSubHeadingListEnd
 
 
@@ -252,57 +249,43 @@
 %-----------WORK EXPERIENCE-----------
 \section{Work Experience}
 \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Technology Partners}{Aug 2023 -- Present}
-      {Junior Software Engineer (Full Stack \& QA)}{Remote}
+      {Junior Software Engineer (Full Stack \& QA)}{Aug 2023 -- Present}
+      {Conctractor (Full Time)}{Remote}
       \resumeItemListStart
-          \resumeItem{Contributed to the full software development lifecycle from data acquisition to deployment in a fast-paced startup environment.}
-          \resumeItem{Developed and maintained robust web scraping solutions using Playwright and Stagehand with rigorous data validation and cleaning procedures.}
-          \resumeItem{Designed, implemented, and maintained relational databases using PostgreSQL and Supabase, optimizing schema design and query performance.}
-          \resumeItem{Built and maintained internal web applications using Next.js and TypeScript with user authentication and responsive design.}
+          \resumeItem{Contributed to the full software development lifecycle from data acquisition to deployment in a fast-paced startup.}
+          \resumeItem{Developed robust web scraping solutions using Playwright and Stagehand with data validation.}
+          \resumeItem{Designed, implemented, and maintained relational databases using PostgreSQL on Supabase.}
+          \resumeItem{Built and maintained responsive internal web app using Next.js, React, and TypeScript.}
           \resumeItem{Developed a RESTful API for internal and vendor use.}
-          \resumeItem{Oversaw company-wide IT security and managed SaaS subscriptions, aligning technology solutions with business goals.}
+          \resumeItem{Developed websocket and edge functions for live phone call transcription with diarization.}
+          \resumeItem{Oversaw company-wide IT, security, and vendors, and software tools.}
           \resumeItem{Acted as the primary liaison with external engineers and QA vendors.}
-          \resumeItem{Developed test strategies and cases for mobile and desktop applications; participated in building a user data database and created API documentation.}
-          \resumeItem{Conducted unit, integration, and system tests as well as user need verifications for potential app features.}
+          \resumeItem{Developed test strategies and cases for mobile and desktop applications.}
+          \resumeItem{Conducted unit, integration, and system tests as well as user validation for potential app features.}
       \resumeItemListEnd
-
     \resumeSubheading
-      {Customer Service}{Mar 2020 -- Present}
+      {Customer Service}{Mar 2020 -- Dec 2024}
       {Target, GameStop, Stud Muffin Bakery, Five Daughters Bakery, Uconnect Esports}{}
       \resumeItemListStart
           \resumeItem{Resolved customer technology issues through detailed troubleshooting.}
           \resumeItem{Managed inventory, revenue, expenses, and scheduling, overseeing \$250k in monthly revenue.}
           \resumeItem{Trained and led teams to enhance performance and streamline onboarding processes.}
           \resumeItem{Founded and managed a bakery, demonstrating strong entrepreneurial skills.}
-          \resumeItem{Produced and edited content for Uconnect Esports to engage gaming communities via Twitter and Discord.}
-      \resumeItemListEnd
-
+          \resumeItem{Produced social media content for Uconnect Esports to engage gaming communities via Twitter and Discord.}
+      \resumeItemListEnd%
     \resumeSubheading
-      {Dronifi}{June 2017 -- Mar 2020}
-      {Customer Sales and Service}{Westlake, CA}
+      {Customer Sales and Service}{June 2017 -- Mar 2020}
+      {Dronifi}{Westlake, CA}
       \resumeItemListStart
-          \resumeItem{Troubleshot a range of customer issues from sales pitches to technical challenges.}
           \resumeItem{Conducted sales calls by assessing customer needs and addressing objections.}
-          \resumeItem{Led an email marketing campaign on ZoHo and Mailchimp, increasing click-through rates from 2\% to 60\%.}
-          \resumeItem{Developed bespoke customer solutions based on in-depth product knowledge.}
-          \resumeItem{Created custom marketing materials using Photoshop and Illustrator; produced marketing videos with Premiere Pro.}
-          \resumeItem{Represented the company at Interdrone (Las Vegas 2018) to present solutions.}
+          \resumeItem{Led an email marketing campaign on ZoHo and Mailchimp, increasing click-through rates from 2\% to 60\% through data analysis, complex decision trees, and hyper targeted messaging.}
+          \resumeItem{Represented the company by presenting at Interdrone (Las Vegas 2018).}
       \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %-----------LEADERSHIP / EXTRACURRICULAR-----------
-\section{Leadership / Extracurricular}
-\resumeSubHeadingListStart
-    \resumeSubheading
-      {Pepperdine Gaming Club}{June 2019 -- May 2020}
-      {Founding President}{Malibu, CA}
-    \resumeSubheading
-      {IVC Video Game Development Club}{May 2023 -- Present}
-      {President}{Irvine, CA}
-\resumeSubHeadingListEnd
+% Ommitted. if adding back, go to the template for formatting.
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -326,8 +309,9 @@
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \resumeSubHeadingListStart
-    \resumeItem{ \textbf{Languages:} C++, Python, JavaScript, TypeScript, SQL }
-    \resumeItem{ \textbf{Tools:} Next.js, Playwright, Stagehand, PostgreSQL, Supabase, Jira, Confluence }
+    \resumeItem{ \textbf{Languages:} C++, Python, JavaScript }
+    \resumeItem{ \textbf{Libraries:} Playwright, Stagehand, Typescript, React }
+    \resumeItem{ \textbf{Tools:} Browserbase, Supabase, Vercel, Jira, Confluence }
 \resumeSubHeadingListEnd
 
 \end{document}
