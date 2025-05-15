@@ -1,6 +1,7 @@
 %-------------------------
-% Resume in Latex
-% Author : Adrian Tull
+% Resume in LaTeX Template
+% Author : Your Name
+% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -22,120 +23,84 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-
-
 %---------------
 %%%% FONTS %%%%%
 %---------------
+% Reference guide for Roman, Sans Serif and Typewriter typefaces
+% Uncomment only ONE font option
 
-%----------------------------------------------------------------
-% SERIF FONTS
-%----------------------------------------------------------------
-% Computer Modern (default)
-% \renewcommand{\rmdefault}{cmr}
+%------------------------
+% ROMAN (SERIF) FONTS
+%------------------------
+% Computer Modern Roman (default - no package needed)
+% Font code: cmr
 
-% Latin Modern
-% \usepackage{lmodern}
-% \renewcommand{\rmdefault}{lmr}
+% Latin Modern Roman
+% \usepackage{lmodern}  % Font code: lmr
 
-% Times
-% \renewcommand{\rmdefault}{ptm}
-
-% Palatino
-% \renewcommand{\rmdefault}{ppl}
-
-% Bookman
-% \renewcommand{\rmdefault}{pbk}
-
-% New Century Schoolbook
-% \renewcommand{\rmdefault}{pnc}
-
-% Charter
-% \renewcommand{\rmdefault}{bch}
-
-% Utopia
-% \renewcommand{\rmdefault}{put}
-
-% TeX Gyre Schola
-% \renewcommand{\rmdefault}{qpl}
+% Latin Modern Dunhill
+% \usepackage{lmodern}  % Font code: lmdh
 
 % TeX Gyre Termes
-% \renewcommand{\rmdefault}{qtm}
-%----------------------------------------------------------------
+% \usepackage{tgtermes}  % Font code: qtm
 
+% TeX Gyre Pagella
+% \usepackage{tgpagella}  % Font code: qpl
 
-%----------------------------------------------------------------
+% TeX Gyre Bonum
+% \usepackage{tgbonum}  % Font code: qbk
+
+% TeX Gyre Schola
+% \usepackage{tgschola}  % Font code: qcs
+
+% Times
+% \usepackage{mathptmx}  % Font code: ptm
+
+% Utopia/Fourier
+% \usepackage{fourier}  % Font code: put
+
+% Palatino
+% \usepackage{palatino}  % Font code: ppl
+
+% Bookman
+% \usepackage{bookman}  % Font code: pbk
+
+% Charter
+% \usepackage{charter}  % Font code: bch
+
+%------------------------
 % SANS SERIF FONTS
-%----------------------------------------------------------------
-% Computer Modern Sans
-% \renewcommand{\sfdefault}{cmss}
+%------------------------
+% Computer Modern Sans Serif
+% Font code: cmss
 
-% Latin Modern Sans
-% \usepackage{lmodern}
-% \renewcommand{\sfdefault}{lmss}
-
-% Helvetica
-% \renewcommand{\sfdefault}{phv}
-
-% Avant Garde
-% \renewcommand{\sfdefault}{pag}
-
-% TeX Gyre Heros
-% \renewcommand{\sfdefault}{qhv}
+% Latin Modern Sans Serif
+% \usepackage{lmodern}  % Font code: lmss
 
 % TeX Gyre Adventor
-% \renewcommand{\sfdefault}{qiv}
+% \usepackage{tgadventor}  % Font code: qag
 
-% Nimbus Sans L
-% \renewcommand{\sfdefault}{nvs}
+% TeX Gyre Heros
+% \usepackage{tgheros}  % Font code: qhv
 
-% Computer Modern Sans (duplicate for consistency)
-% \renewcommand{\sfdefault}{cmss}
+% Helvetica
+% \usepackage{helvet}  % Font code: phv
 
-% Helvetica (duplicate for consistency)
-% \renewcommand{\sfdefault}{phv}
+%------------------------
+% TYPEWRITER FONTS
+%------------------------
+% Computer Modern Typewriter
+% Font code: cmtt
 
-% Avant Garde (duplicate for consistency)
-% \renewcommand{\sfdefault}{pag}
-%----------------------------------------------------------------
+% Latin Modern Typewriter
+% \usepackage{lmodern}  % Font code: lmtt
 
-
-%----------------------------------------------------------------
-% MONOSPACE FONTS
-%----------------------------------------------------------------
-% Computer Modern Typewriter (default)
-% \renewcommand{\ttdefault}{cmtt}
-
-% Latin Modern Mono
-% \usepackage{lmodern}
-% \renewcommand{\ttdefault}{lmtt}
+% TeX Gyre Cursor
+% \usepackage{tgcursor}  % Font code: qcr
 
 % Courier
-% \renewcommand{\ttdefault}{pcr}
-
-% Inconsolata
-% \renewcommand{\ttdefault}{zi4}
-
-% Nimbus Mono L
-% \renewcommand{\ttdefault}{nmm}
-
-% Anonymous Pro
-% \renewcommand{\ttdefault}{anpro}
-
-% Luxi Mono
-% \renewcommand{\ttdefault}{luximono}
-
-% Input Mono
-% \renewcommand{\ttdefault}{inm}
-
-% Fira Mono
-% \renewcommand{\ttdefault}{fira}
-
-% DejaVu Sans Mono
-% \renewcommand{\ttdefault}{dejavu}
+% \usepackage{courier}  % Font code: pcr
 %----------------------------------------------------------------
-
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -161,21 +126,17 @@
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Keep this line so that generated pdf is machine readable/ATS parsable
+% Ensure generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{ {#1 \vspace{-2pt}} }
 }
 
 \newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
+    \item\small{ {#1 #2 #3 #4 \vspace{-2pt}} }
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -225,22 +186,18 @@
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
 \resumeSubHeadingListStart
-    \item
-    \begin{tabular}{p{3cm} p{10cm}}
-    \textbf{ISTQB}      & Certified Tester Foundation Level (CTFL) \\
-    \textbf{CompTIA}    & A+ Core 1                              \\
-    \textbf{Confluence} & Fundamentals Certification               \\
-    \textbf{Jira}       & Fundamentals Certification               \\
-    \end{tabular}
+    \resumeItem{\textbf{ISTQB:} Certified Tester Foundation Level (CTFL)}
+    \resumeItem{\textbf{CompTIA:} A+ Core 1}
+    \resumeItem{\textbf{Confluence:} Fundamentals Certification}
+    \resumeItem{\textbf{Jira:} Fundamentals Certification}
 \resumeSubHeadingListEnd
-
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheading
       {Southern New Hampshire University}{May 2023 -- Present}
-      {Bachelors in Computer Science}{Remote}
+      {Bachelor of Science in Computer Science}{Remote}
     \resumeItemListStart
         \resumeItem{GPA: 3.92}
     \resumeItemListEnd
@@ -250,8 +207,8 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {Junior Software Engineer (Full Stack \& QA)}{Aug 2023 -- Present}
-      {Conctractor (Full Time)}{Remote}
+      {Software Engineer (Full Stack \& QA)}{Aug 2023 -- Present}
+      {Contractor (Full Time)}{Remote}
       \resumeItemListStart
           \resumeItem{Contributed to the full software development lifecycle from data acquisition to deployment in a fast-paced startup.}
           \resumeItem{Developed robust web scraping solutions using Playwright and Stagehand with data validation.}
@@ -266,14 +223,14 @@
       \resumeItemListEnd
     \resumeSubheading
       {Customer Service}{Mar 2020 -- Dec 2024}
-      {Target, GameStop, Stud Muffin Bakery, Five Daughters Bakery, Uconnect Esports}{}
+      {Target, GameStop, Stud Muffin Bakery, Five Daughters Bakery, Uconnect Esports}{ }
       \resumeItemListStart
           \resumeItem{Resolved customer technology issues through detailed troubleshooting.}
           \resumeItem{Managed inventory, revenue, expenses, and scheduling, overseeing \$250k in monthly revenue.}
           \resumeItem{Trained and led teams to enhance performance and streamline onboarding processes.}
           \resumeItem{Founded and managed a bakery, demonstrating strong entrepreneurial skills.}
           \resumeItem{Produced social media content for Uconnect Esports to engage gaming communities via Twitter and Discord.}
-      \resumeItemListEnd%
+      \resumeItemListEnd
     \resumeSubheading
       {Customer Sales and Service}{June 2017 -- Mar 2020}
       {Dronifi}{Westlake, CA}
@@ -284,34 +241,23 @@
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------LEADERSHIP / EXTRACURRICULAR-----------
-% Ommitted. if adding back, go to the template for formatting.
-
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-
-    \resumeProjectHeading
-      {\textbf{Data Structures and Algorithms Library} $|$ \emph{C++}}{}
-      \resumeItemListStart
-          \resumeItem{Developed a personal library of data structures and algorithms using C++, emphasizing performance optimization, memory management, and object-oriented design.}
-      \resumeItemListEnd
-
     \resumeProjectHeading
       {\textbf{TFT Data Crawler} $|$ \emph{Python}}{}
       \resumeItemListStart
-          \resumeItem{Implemented a breadth-first search algorithm to call the Riot API, gathering JSON data on the top 2\% of players.}
+          \resumeItem{Implemented a breadth-first search algorithm to call the Riot Games API, gathering JSON data on the top 2\% of players.}
           \resumeItem{Analyzed data to identify popular strategies and investigate tactical gameplay decisions.}
       \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \resumeSubHeadingListStart
-    \resumeItem{ \textbf{Languages:} C++, Python, JavaScript }
-    \resumeItem{ \textbf{Libraries:} Playwright, Stagehand, Typescript, React }
-    \resumeItem{ \textbf{Tools:} Browserbase, Supabase, Vercel, Jira, Confluence }
+    \resumeItem{ \textbf{Languages:} C++, Python, JavaScript}
+    \resumeItem{ \textbf{Libraries:} Playwright, Stagehand, TypeScript, React}
+    \resumeItem{ \textbf{Tools:} Browserbase, Supabase, Vercel, Jira, Confluence}
 \resumeSubHeadingListEnd
 
 \end{document}
